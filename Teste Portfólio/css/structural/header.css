@@ -1,0 +1,154 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  scroll-margin-top: 20rem;
+}
+
+.headerLeft{
+  max-width: 62rem;
+  flex: 1;
+  margin: 6rem 0;
+}
+
+.headerLeft p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  max-width: 50rem;
+}
+
+.headerRight_Img{
+  position: relative;
+  line-height: 0rem;
+}
+
+.headerRight_Img::after{
+  content: '';
+  display: block;
+  width: 193px;
+  height: 255px;
+  border: 1px solid var(--tertiary-color);
+  top: -2.3rem;
+  right: 3rem;
+  z-index: -2;
+  position: absolute;
+  border-radius: 1rem;
+  background-color: var(--blue);
+}
+
+.diegoImg {
+  position: relative;
+  right: 5rem;
+  border-radius: 1.5rem;
+  max-width: 100%;
+}
+
+.background {
+  position: absolute;
+  top: -1.3rem;
+  right: -4.3rem;
+  z-index: -1;
+  width: 350px;
+  height: 125px;
+}
+
+.fade-in_Header {
+  opacity: 0;
+  animation: fadeIn 4s forwards;
+}
+
+.fade-in_Header:nth-child(1) {
+  animation-delay: 1.5s;
+}
+
+.fade-in_Header:nth-child(2) {
+  animation-delay: 2.6s;
+}
+
+.fade-in_Header:nth-child(3) {
+  animation-delay: 2s;
+}
+
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}  
+
+.slide-in-left {
+  transform: translateX(-20%);
+  opacity: 0;
+  animation: slideInLeft 2s forwards;
+}
+
+.slide-in-right_Header {
+  transform: translateX(50%);
+  opacity: 0;
+  animation: slideInRight 2s forwards;
+}
+
+.slide-in-left_Header:nth-child(1),
+.slide-in-righ_Headert:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.slide-in-left_Header:nth-child(2),
+.slide-in-right_Header:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.slide-in-left_Header:nth-child(3),
+.slide-in-right_Header:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes slideInLeft {
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  
+  header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  header .header__left p {
+    margin: 2rem auto 4rem;
+  }
+
+  .diegoImg {
+    left: 0.2rem;
+  }
+
+  .background {
+    right: -11rem;
+  }
+
+  .headerRight_Img::after{
+    right: -2rem;
+  }
+
+  .headerLeft p {
+    max-width: 62rem;
+  }
+
+
+
+
+
+
+
+}

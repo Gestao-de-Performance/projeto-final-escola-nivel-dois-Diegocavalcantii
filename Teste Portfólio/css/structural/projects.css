@@ -1,0 +1,139 @@
+.projects{
+    margin-bottom: 20rem;
+    scroll-margin-top: 15rem;
+}
+
+.h2_Title_Pro{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 4rem 0 2rem; 
+}
+
+.projects_Content{
+    text-align: center;
+    margin: 6rem auto 2rem;
+    padding: 2rem 4rem;
+}
+
+.projects ul li{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.projects_1{
+    width: 35rem;
+    height: auto;
+}
+
+.projects_2{
+    width: 40rem;
+    height: auto;
+}
+
+.projects_Li_Reverse{
+    flex-direction: row-reverse;
+    
+}
+
+.projects_Title{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 20px;
+
+}
+
+.projects_P{
+    text-align: justify;
+    margin: 1rem 0 6rem 0;
+    
+    
+}
+
+.projects_A{
+    color: blue;
+    text-decoration: underline;
+    
+}
+
+.projects_A:hover {
+    color: darkblue;
+}
+
+.fade-in_Pro {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+.fade-in_Pro:nth-child(1) {
+    animation-delay: 0.5s;
+}
+  
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-in-left_Pro {
+    transform: translateX(-20%);
+    opacity: 0;
+    animation: slideInLeft 7s forwards;
+}
+  
+.slide-in-right_Pro {
+    transform: translateX(20%);
+    opacity: 0;
+    animation: slideInRight 7s forwards;
+}
+
+@keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+  
+@keyframes slideInRight {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) and (max-height: 1024px){
+    .projects{
+        scroll-margin-top: 7rem;
+    }
+    
+    .projects_2 {
+        width: 40rem;
+        height: auto;
+    }
+
+    .projects_P {
+        text-indent: 30px;
+        word-spacing: -0.3rem;
+    }
+
+}
+
+@media only screen and (max-width: 490px){
+    .projects ul li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+        margin-bottom: 4rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .projects_1{
+        width: 40rem;
+    }
+
+}

@@ -1,0 +1,22 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #c7c7c9;
+  --blue:#0a174b;
+  --blue3:#0a174bc0;
+  --blue2:#294b93d7;
+  --primary-color: #020739;
+  --secondary-color: #0c1e33;
+  --dark-secondary-color: #434a71;
+  --tertiary-color: #9eace7;
+  --light-tertiary-color: #cfd8e6;
+  --text-color: #2f3a47;
+ 
+  --html: #DB4E26;
+  --css: #2862EA;
+  --js: #ff9500;
+  --py: #00ff08;
+  --power: #eeff00;
+
+  --font-family: 'DM Sans', sans-serif;
+}

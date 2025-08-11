@@ -1,0 +1,8 @@
+@import './base.css';
+@import './vars.css';
+@import './structural/navbar.css';
+@import './structural/header.css';
+@import './structural/about.css';
+@import './structural/skills.css';
+@import './structural/projects.css';
+@import './structural/footer.css';
